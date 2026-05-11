@@ -3,20 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloudias Innovation | Coming Soon</title>
+    <title>Cloudias | Technology for the Human Experience</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .container { text-align: center; padding: 20px; border-radius: 10px; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; margin-bottom: 10px; }
-        p { color: #7f8c8d; font-size: 1.2rem; }
-        .tagline { font-style: italic; color: #3498db; margin-top: 20px; }
+        :root {
+            --brand-blue: #0b23ff;
+            --brand-bg: #f3f5ff;
+            --brand-black: #1d1d1d;
+            --brand-gray: #575757;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--brand-bg);
+            color: var(--brand-black);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 60px 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(11, 35, 255, 0.06);
+            max-width: 550px;
+            width: 90%;
+        }
+
+        .logo-container {
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--brand-black);
+            margin-bottom: 8px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: var(--brand-blue);
+            margin-bottom: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .description {
+            color: var(--brand-gray);
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-size: 1.05rem;
+        }
+
+        .cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 16px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-primary {
+            background-color: var(--brand-blue);
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(11, 35, 255, 0.25);
+        }
+
+        .btn-primary:hover {
+            background-color: #0016d9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(11, 35, 255, 0.35);
+        }
+
+        .btn-outline {
+            border: 2.5px solid var(--brand-blue);
+            color: var(--brand-blue);
+            box-sizing: border-box;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--brand-blue);
+            color: #ffffff;
+        }
+
+        .contact-info {
+            font-size: 0.95rem;
+            color: var(--brand-gray);
+        }
+
+        .contact-info a {
+            color: var(--brand-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .tagline {
+            margin-top: 45px;
+            font-size: 0.8rem;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: #aeb6ff;
+            border-top: 1px solid #f0f2ff;
+            padding-top: 25px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 40px 25px; }
+            h1 { font-size: 1.5rem; }
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>Cloudias Innovation</h1>
-        <p>Purposeful Digitalization. Human-Centric Solutions.</p>
-        <div class="tagline">Our new digital home is under construction.</div>
+        <div class="logo-container">
+            <img src="logo.svg" alt="Cloudias Innovation Logo" class="logo">
+        </div>
+        
+        <h1>Digital Learning Elevated with AI</h1>
+        <p class="subtitle">Clinical-Grade Ecosystem</p>
+
+        <p class="description">
+            Advancing digital infrastructure through human-centric design. Experience our intelligent LMS solutions tailored for technical and general training excellence.
+        </p>
+
+        <div class="cta-group">
+            <a href="https://cloudias.eduspr.com/" class="btn btn-primary" target="_blank">Access Live Demo</a>
+            <a href="https://wa.link/ksk4an" class="btn btn-outline" target="_blank">Connect on WhatsApp</a>
+        </div>
+
+        <div class="contact-info">
+            Inquiries: <a href="mailto:ask.cloudias@gmail.com">ask.cloudias@gmail.com</a>
+        </div>
+
+        <div class="tagline">
+            Technology for the Human Experience
+        </div>
     </div>
+
 </body>
 </html>
